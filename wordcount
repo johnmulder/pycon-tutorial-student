@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 import sys
 import argparse
 import wordcount_lib
@@ -11,7 +11,7 @@ def main():
     total_words = 0
     total_lines = 0
     total_chars = 0
-    
+
     for filename in args.filenames:
         try:
             chars, words, lines = wordcount_lib.consume(filename)
